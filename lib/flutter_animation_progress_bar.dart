@@ -133,7 +133,7 @@ class AnimatedProgressBar extends AnimatedWidget {
                 ? FractionalOffset(0.5, 0.05)
                 : FractionalOffset(0.5, 0.95)),
         child: Text(
-          (animation.value * widget.maxValue).toInt().toString() +
+          "Lv:"+(animation.value * widget.maxValue).toInt().toString() +
               widget.displayText,
           softWrap: false,
           style: widget.displayTextStyle,
