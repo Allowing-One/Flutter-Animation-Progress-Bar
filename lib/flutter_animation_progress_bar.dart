@@ -127,11 +127,7 @@ class AnimatedProgressBar extends AnimatedWidget {
 
     if (widget.displayText != null) {
       Widget textProgress = new Container(
-        alignment: widget.direction == Axis.horizontal
-            ? FractionalOffset(0.95, 0.5)
-            : (widget.verticalDirection == VerticalDirection.up
-                ? FractionalOffset(0.5, 0.05)
-                : FractionalOffset(0.5, 0.95)),
+        alignment: Alignment.centerLeft,
         child: Text(
           "Lv:"+(animation.value * widget.maxValue).toInt().toString() +
               widget.displayText,
